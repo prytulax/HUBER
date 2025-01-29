@@ -1,0 +1,148 @@
+.header {
+    width: 100%; 
+    max-width: 1440px; 
+    height: 80px;
+    padding-top: 19px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+.h-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 15px; 
+    margin: 0 auto;
+}
+.h-logo {
+    width: 145px;
+    height: auto;
+}
+.h-list {
+    display: flex;
+    column-gap: 45px;
+    align-items: center; 
+}
+.h-list-text {
+    color: #e95d0f;
+    font-weight: 500;
+    transition: color 0.3s ease; 
+}
+.h-list-text:hover {
+    color: rgb(59, 24, 5);
+    font-weight: 500;
+}
+.h-anmeldung {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    color: #e95d0f;
+    border: 2px solid #e95d0f;
+    border-radius: 35px 0;
+    width: 141px;
+    height: 41px;
+    background-color: transparent; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.an-container {
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+}
+/* .h-registrieren {
+    
+} */
+.main {
+    border-top: 1px solid #e95d0f;
+    margin-top: 20px; 
+}
+
+
+
+
+/* Kontakten */
+.standorte{
+    padding: 25px 52px;
+    color: #e95d0f;
+}
+.s-list{
+    display: flex;
+    column-gap: 100px;
+    padding-left: 75px;
+}
+/* .list-item{
+
+}
+.s-list-title{
+
+}
+.s-list-text{
+
+}
+.s-list-address{
+
+} */
+
+/* Modal-Window */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+
+    justify-content: center;
+    align-items: center;
+}
+.modal-content {
+    background: #e95d0f;
+    color: #000000;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    text-align: center;
+    position: relative;
+    align-items: center;
+}
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 20px;
+    cursor: pointer;
+}
+input {
+    display: block;
+    width: 90%;
+    margin: 10px auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.sections-list{
+    font-family: var(--second-family);
+font-weight: 400;
+font-size: 20px;
+text-align: justify;
+
+    display: flex;
+    justify-content:center ;
+    column-gap: 20px;
+    padding-top: 50px;;
+}
+.sections-item{
+    background-color: #000000;
+    color: #e95d0f;
+    border: 2px solid #e95d0f;
+}
+.sections-item:hover{
+    border-radius: 45px ;
+}

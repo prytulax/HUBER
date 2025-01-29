@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css" integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Noto+Serif+Todhri&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/reset.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container h-container">
+            <a href="./index.html"> 
+                <img src="./images/logo.png" alt="HUBER-Parking" class="h-logo">
+            </a>
+            <nav class="navigation">
+                <ul class="h-list">
+                    <li class=" h-list-item">
+                        <a href="./index.html" class="h-list-text ">Hauptseite</a>
+                    </li>
+                    <li class=" h-list-item">
+                        <a href="./uberuns.html" class="h-list-text">Über uns</a>
+                    </li>
+                    <li class=" h-list-item">
+                        <a href="./kontakten.html" class="h-list-text">Kontakten</a>
+                    </li>
+            </nav>
+            <div class="container an-container">
+                <button type="button" class="h-anmeldung" id="openLogin">Anmelden</button>
+                <button type="button" class="h-registrieren" id="openRegister">Registrieren</button>
+                <!-- Модальное окно регистрации -->
+                <div id="registerModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close" data-close="registerModal">&times;</span>
+                        <h2>Регистрация</h2>
+                        <input type="text" placeholder="Имя">
+                        <input type="email" placeholder="Email">
+                        <input type="password" placeholder="Пароль">
+                        <button>Зарегистрироваться</button>
+                    </div>
+                </div>
+            
+                <!-- Модальное окно входа -->
+                <div id="loginModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close" data-close="loginModal">&times;</span>
+                        <h2>Вход</h2>
+                        <input type="email" placeholder="Email">
+                        <input type="password" placeholder="Пароль">
+                        <button>Войти</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <h1 class="im-title">Iphone 16 und 16 Pro</h1>
+        <ul class="sections-list">
+            <li>
+                <a href="#section1" class="sections-item">Design und Display</a>
+            </li>
+            <li>
+                <a href="#section2" class="sections-item">Kamera</a>
+            </li>
+            <li>
+                <a href="#section3" class="sections-item">Leistung</a>
+            </li>
+            <li>
+                <a href="#section4" class="sections-item">Neue Funktionen</a>
+            </li>
+            <li>
+                <a href="#section5" class="sections-item">Preise und Verfügbarkeit</a>
+            </li>
+        </ul>
+        <div class="container">
+            <h2 id="#section1">Design und Display</h2>
+            <p>Das iPhone 16 und iPhone 16 Plus verfügen über OLED-Displays mit einer Diagonale von 6,1 und 6,7 Zoll und einer maximalen Helligkeit von bis zu 2000 Nits. <br>
+                Das Design der Geräte wurde leicht verändert: Die Kameramodule sind nun vertikal angeordnet, was an das Design des iPhone 12 erinnert. <br>
+                Neue Farbvarianten sind verfügbar: Ultramarin, Türkis, Rosa, Weiß und Schwarz. <br>
+                Die iPhone 16 Pro- und Pro Max-Modelle haben größere Displays: 6,3 Zoll und 6,9 Zoll. Der Gehäuse besteht aus Titan, was den Geräten sowohl Festigkeit als auch Leichtigkeit verleiht. <br>
+                Verfügbare Farben: Schwarz, Grau, Silber und Sand.</p>
+            <h2 id="#section2">Kamera</h2>
+            <p>Das iPhone 16 und 16 Plus sind mit einer Dual-Kamera ausgestattet: einem 48 MP Hauptsensor und einem 12 MP Ultra-Weitwinkel-Sensor. <br>
+                Es gibt jetzt die Möglichkeit, räumliches Video aufzunehmen, das mit dem Apple Vision Pro-Headset betrachtet werden kann. <br>
+                Die Pro-Modelle verfügen über eine Triple-Kamera: einen 48 MP Hauptsensor, einen 48 MP Ultra-Weitwinkel-Sensor und ein Teleobjektiv mit 5-fachem optischen Zoom. <br>
+                Verbesserte Videoaufnahmefunktionen in 4K mit 120 Bildern pro Sekunde.</p>
+            <h2 id="#section3">Leistung</h2>
+            <p>Das iPhone 16 und 16 Plus werden vom A18 Bionic-Prozessor betrieben, der eine hohe Leistung und Unterstützung für Apple Intelligence AI-Funktionen bietet. <br>
+                Die Pro-Modelle sind mit dem A18 Pro-Chip ausgestattet, der einen 16-Kern-Neural-Processor enthält und fortschrittliche KI-Tools und Fotofunktionen unterstützt.</p>
+            <h2 id="#section4">Neue Funktionen</h2>
+            <p>Alle Modelle haben eine anpassbare "Action-Taste" ersetzt den Stummschalter. Diese Taste kann verwendet werden, um die Kamera zu starten, die Taschenlampe, das Diktiergerät und andere Apps zu aktivieren. <br>
+                Es gibt auch eine Kamerasteuerungstaste an der rechten Seite des Geräts, mit der man schnell Fotos machen und die Kameraeinstellungen verwalten kann</p>
+            <h2 id="#section5">Preise und Verfügbarkeit</h2>
+            <p>Die Preise für das neue iPhone 16 bleiben auf dem Niveau der vorherigen Generation: <br>
+
+                iPhone 16 – ab 799 USD <br>
+                iPhone 16 Plus – ab 899 USD <br>
+                iPhone 16 Pro – ab 999 USD <br>
+                iPhone 16 Pro Max – ab 1199 USD</p>
+        </div>
+    </main>
+    <footer></footer>
+    <script src="./script.js"></script>
+</body>
+</html>

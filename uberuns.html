@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css" integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Noto+Serif+Todhri&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/reset.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container h-container">
+            <a href="./index.html"> 
+                <img src="./images/logo.png" alt="HUBER-Parking" class="h-logo">
+            </a>
+            <nav class="navigation">
+                <ul class="h-list">
+                    <li class=" h-list-item">
+                        <a href="./index.html" class="h-list-text ">Hauptseite</a>
+                    </li>
+                    <li class=" h-list-item">
+                        <a href="./uberuns.html" class="h-list-text">Über uns</a>
+                    </li>
+                    <li class=" h-list-item">
+                        <a href="./kontakten.html" class="h-list-text">Kontakten</a>
+                    </li>
+            </nav>
+            <div class="container an-container">
+                <button type="button" class="h-anmeldung" id="openLogin">Anmelden</button>
+                <button type="button" class="h-registrieren" id="openRegister">Registrieren</button>
+                <!-- Модальное окно регистрации -->
+                <div id="registerModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close" data-close="registerModal">&times;</span>
+                        <h2>Регистрация</h2>
+                        <input type="text" placeholder="Имя">
+                        <input type="email" placeholder="Email">
+                        <input type="password" placeholder="Пароль">
+                        <button>Зарегистрироваться</button>
+                    </div>
+                </div>
+            
+                <!-- Модальное окно входа -->
+                <div id="loginModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close" data-close="loginModal">&times;</span>
+                        <h2>Вход</h2>
+                        <input type="email" placeholder="Email">
+                        <input type="password" placeholder="Пароль">
+                        <button>Войти</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main></main>
+    <footer></footer>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,3 +1,13 @@
+/* Allgemeine Stile */
+body {
+    font-family: 'Noto Serif Todhri', serif;
+    color: #000;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
 .header {
     width: 100%; 
     max-width: 1440px; 
@@ -15,10 +25,7 @@
     padding: 0 15px; 
     margin: 0 auto;
 }
-.h-logo {
-    width: 145px;
-    height: auto;
-}
+
 .h-list {
     display: flex;
     column-gap: 45px;
@@ -33,59 +40,66 @@
     color: rgb(59, 24, 5);
     font-weight: 500;
 }
-.h-anmeldung {
-    font-family: var(--second-family);
-    font-weight: 400;
-    font-size: 20px;
+
+/* Logo */
+.h-logo {
+    width: 145px;
+    height: auto;
+}
+
+/* Navigation */
+.nav{
+    padding-left: 250px;
+}
+.h-list {
+    display: flex;
+    gap: 45px;
+    align-items: center;
+    list-style: none;
+    padding-left: 250px;
+}
+
+.h-list-text {
+    color: #e95d0f;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.h-list-text:hover {
+    color: rgb(59, 24, 5);
+}
+
+/* Buttons (Anmelden & Registrieren) */
+.an-container{
+    display: flex;
+    justify-content: flex-end;
+    width: 300px;
+
+}
+.h-anmeldung,
+.h-registrieren {
+    font-family: 'Noto Serif Todhri', serif;
+    font-size: 16px;
     text-align: center;
     color: #e95d0f;
     border: 2px solid #e95d0f;
     border-radius: 35px 0;
     width: 141px;
     height: 41px;
-    background-color: transparent; 
+    background-color: transparent;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.an-container {
-    display: flex;
-    column-gap: 20px;
-    align-items: center;
-}
-/* .h-registrieren {
-    
-} */
-.main {
-    border-top: 1px solid #e95d0f;
-    margin-top: 20px; 
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
-
-
-
-/* Kontakten */
-.standorte{
-    padding: 25px 52px;
-    color: #e95d0f;
+.h-anmeldung:hover,
+.h-registrieren:hover {
+    background-color: #e95d0f;
+    color: #fff;
 }
-.s-list{
-    display: flex;
-    column-gap: 100px;
-    padding-left: 75px;
-}
-/* .list-item{
-
-}
-.s-list-title{
-
-}
-.s-list-text{
-
-}
-.s-list-address{
-
-} */
 
 /* Modal-Window */
 .modal {
@@ -97,27 +111,31 @@
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
-
+    display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .modal-content {
-    background: #e95d0f;
-    color: #000000;
-    padding: 20px;
-    border-radius: 8px;
-    width: 300px;
+    background: #fff;
+    color: #000;
+    padding: 25px;
+    border-radius: 10px;
+    width: 320px;
     text-align: center;
     position: relative;
-    align-items: center;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
 }
+
 .close {
     position: absolute;
     top: 10px;
     right: 15px;
     font-size: 20px;
     cursor: pointer;
+    color: #e95d0f;
 }
+
 input {
     display: block;
     width: 90%;
@@ -127,22 +145,82 @@ input {
     border-radius: 5px;
 }
 
-.sections-list{
-    font-family: var(--second-family);
-font-weight: 400;
-font-size: 20px;
-text-align: justify;
+/* Hauptinhalt */
+.main {
+    border-top: 2px solid #e95d0f;
+    padding: 20px;
+}
 
-    display: flex;
-    justify-content:center ;
-    column-gap: 20px;
-    padding-top: 50px;;
-}
-.sections-item{
-    background-color: #000000;
+.im-title {
+    text-align: center;
+    font-size: 28px;
     color: #e95d0f;
-    border: 2px solid #e95d0f;
+    margin-bottom: 30px;
 }
-.sections-item:hover{
-    border-radius: 45px ;
+
+/* Sections */
+.sections-list {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.sections-item {
+    background-color: #000;
+    color: #e95d0f;
+    padding: 10px 15px;
+    border: 2px solid #e95d0f;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.sections-item:hover {
+    border-radius: 20px;
+    background-color: #e95d0f;
+    color: #000;
+}
+
+/* Inhalte */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.container h2 {
+    color: #e95d0f;
+    font-size: 24px;
+    margin-top: 30px;
+}
+
+.container p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.container img {
+    width: 120px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.section-1,
+.section-2,
+.section-3,
+.section-4,
+.section-5 {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Footer */
+footer {
+    background-color: #000;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
 }
